@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:#0f0f22;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h1{
+  text-align: center;
+  color: white;
+}
+.media img{
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  border: 5px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.media img:hover{
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+.media video{
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  border: 5px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.media video:hover{
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+.media-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
+
+.popup{
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+
+}
+.popup img{
+  position: absolute;
+  top:20%;
+  left:30%;
+  width: 500px;
+  height: 500px;
+  
+
+}
+.popup video{
+  position: absolute;
+  top:20%;
+  left:30%;
+  width: 500px;
+  height: 500px;
+
+}
+span{
+
+  position: fixed;
+  top:5px;
+  right:40px;
+color: white;
+font-size: 40px;
+font-weight: bolder;
+cursor: pointer;
+}
